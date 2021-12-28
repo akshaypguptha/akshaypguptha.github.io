@@ -4,7 +4,10 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
+
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"
 
 # Setup
 title:            Hyde
@@ -16,8 +19,6 @@ baseurl:          /
 author:
   name:           'Mark Otto'
   url:            https://twitter.com/mdo
-
-paginate:         5
 
 # Custom vars
 version:          2.1.0
