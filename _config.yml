@@ -1,27 +1,37 @@
 # Dependencies
-markdown:         redcarpet
+#markdown:         redcarpet
+markdown:       kramdown       
 highlighter:      pygments
+
+github: [metadata]
+kramdown:
+  input: GFM
+  hard_wrap: false
+gems:
+  - jekyll-coffeescript
+  - jekyll-gist
+    #  - jekyll-mentions
+  - jekyll-paginate
+    #  - jekyll-redirect-from
+whitelist:
+  - jekyll-coffeescript
+  - jekyll-gist
+    #  - jekyll-mentions
+  #- jekyll-paginate
+    #  - jekyll-redirect-from
 
 # Permalinks
 permalink:        pretty
 
-gems: [jekyll-paginate]
-paginate: 5
-paginate_path: "page:num"
+#gems: [jekyll-paginate]
+#paginate: 5
+#paginate_path: "page:num"
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+fname:            Akshay 
+lname:            P Guptha
+title:            Akshay Paniraja Guptha
+tagline:          'My portfolio'
+url:              http://localhost:4000
 baseurl:          /
 
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
-
-# Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/poole/hyde

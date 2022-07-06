@@ -24,7 +24,8 @@
  * Themes
  */
 
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
 /*
  * Global resets
  *
@@ -32,7 +33,7 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: Lato;
 }
 @media (min-width: 48em) {
   html {
@@ -53,6 +54,14 @@ html {
  * out above content in mobile and later moves to the side with wider viewports.
  */
 
+img {
+  width: 60%;
+  margin: auto;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1px;
+}
+
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
@@ -66,7 +75,7 @@ html {
     left: 0;
     bottom: 0;
     width: 18rem;
-    text-align: left;
+    text-align: middle;
   }
 }
 
@@ -79,21 +88,34 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-family: 'Overlock SC', cursive;
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-bottom: 0rem;
+}
+
+.sidebar-about h2 {
+  color: #fff;
+  margin-top: 0;
+  font-family: 'Overlock SC', cursive;
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
 /* Sidebar nav */
 .sidebar-nav {
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .sidebar-nav-item {
   display: block;
   line-height: 1.75;
+  transition: all 500ms;
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
-  text-decoration: underline;
+  text-decoration: none;
+  font-size: 1.50rem;
 }
 .sidebar-nav-item.active {
   font-weight: bold;
@@ -109,7 +131,7 @@ a.sidebar-nav-item:focus {
   .sidebar-sticky {
     position: absolute;
     right:  1rem;
-    bottom: 1rem;
+    top: 1rem;
     left:   1rem;
   }
 }
